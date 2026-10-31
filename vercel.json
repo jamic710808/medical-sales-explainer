@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "headers": [
+    {
+      "source": "/assets/(.*).mp4",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "video/mp4"
+        },
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*).vtt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/vtt; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}
